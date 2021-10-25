@@ -52,7 +52,8 @@ const MenuButton = () => {
     <div 
       className="flex items-end flex-col"
       onClick={() => setMenuClick(!menuClick)}>
-      <button className="outline-none mobile-menu-button">
+      <button className="outline-none mobile-menu-button flex">
+        <span className="text-gray-200">Menu</span>
         <svg
           className="w-6 h-6 text-gray-200"
           x-show="!showMenu"
@@ -74,7 +75,7 @@ const MenuButton = () => {
 
 const Navbar = () => {
   const ref = useRef(null);
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
 
   const handleResize = () => {
     setShowMenu(540>ref.current.offsetWidth);
@@ -87,10 +88,11 @@ const Navbar = () => {
   
 
   return (
-    <nav className="flex justify-between bg-white items-start sm:items-center shadow-lg max-w-6xl mx-auto py-4 px-2 bg-green-500 " ref={ref}>
+    <nav className="flex shadow-lg bg-green-500 " ref={ref}>
+      <div className="flex justify-between bg-green-500 w-full sm:max-w-4xl mx-auto items-start sm:items-center py-4 px-2">
       <p className="text-black font-bold text-gray-200">akuna lab</p>
       { showMenu ? <MenuButton /> : <NavLinks /> }
-      
+      </div>
     </nav>
   )
 }
