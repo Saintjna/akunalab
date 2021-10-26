@@ -1,9 +1,14 @@
 import { useRef, useState, useEffect } from 'react'
 import Link from 'next/link'
+import useWindowDimensions from '../../hooks/UseWindowDimensions'
 
 const NavLinks = () => {
   return (
-    <div className="md:flex items-center space-x-1">
+    <>
+    <div className="sm:hidden">
+      <MenuButton/>
+    </div>
+    <div className="hidden sm:flex space-x-1">
       <Link href="#">
         <a className="py-4 px-2 text-gray-200">Le fab-lab</a>
       </Link>
@@ -20,6 +25,7 @@ const NavLinks = () => {
         <a className="py-4 px-2 text-gray-200">Contact</a>
       </Link>
     </div>
+    </>
   )
 }
 
@@ -68,30 +74,18 @@ const MenuButton = () => {
         </svg>
       </button>
       {menuClick && <NavLinksMobile />}
-      
     </div>
   )
 }
 
 const Navbar = () => {
-  const ref = useRef(null);
-  const [showMenu, setShowMenu] = useState(false);
-
-  const handleResize = () => {
-    setShowMenu(540>ref.current.offsetWidth);
-    console.log(ref.current.offsetWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize, false);
-  }, []);
   
-
   return (
-    <nav className="flex shadow-lg bg-green-500 " ref={ref}>
+    <nav className="flex shadow-lg bg-green-500">
       <div className="flex justify-between bg-green-500 w-full sm:max-w-4xl mx-auto items-start sm:items-center py-4 px-2">
-      <p className="text-black font-bold text-gray-200">akuna lab</p>
-      { showMenu ? <MenuButton /> : <NavLinks /> }
+        <p className="text-black font-bold text-gray-200">akuna lab</p>
+        {/* {showMenu<540 ? <MenuButton/> : <NavLinks/>} */}
+        <NavLinks/>
       </div>
     </nav>
   )
