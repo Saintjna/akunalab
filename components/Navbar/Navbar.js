@@ -81,9 +81,9 @@ const MenuButton = () => {
 const Navbar = () => {
   
   return (
-    <nav className="flex shadow-lg bg-green-500">
-      <div className="flex justify-between bg-green-500 w-full sm:max-w-4xl mx-auto items-start sm:items-center py-4 px-2">
-        <p className="text-black font-bold text-gray-200">akuna lab</p>
+    <nav className="flex shadow-lg bg-red-500">
+      <div className="flex justify-between w-full sm:max-w-4xl mx-auto items-start sm:items-center py-4 px-2">
+        <p className="font-bold text-gray-200">akuna lab</p>
         {/* {showMenu<540 ? <MenuButton/> : <NavLinks/>} */}
         <NavLinks/>
       </div>

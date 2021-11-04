@@ -4,6 +4,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+    fontFamily: {
+      'mono': ['Roboto Condensed', 'ui-monospace'],
+      'sans': ['Cabin', 'ui-sans-serif']
+    }
   },
   variants: {
     extend: {},
