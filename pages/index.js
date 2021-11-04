@@ -19,16 +19,16 @@ export default function Home() {
       </Head>
       <Hero img={scienceImg} img_alt="a light bulb as science">
         <h1 className="text-7xl font-bold text-black font-mono">Akuna Lab</h1>
-        <p className="text-xl">Le fab-lab au service de l'innovation.</p>
+        <p className="text-xl">Le fab-lab au service de {`l'innovation`}.</p>
       </Hero>
       <Box>
-        <h1 className="text-3xl font-bold text-black font-mono">Vous avez dit "fab lab" ?</h1>
-        <p>"Fab Lab" est l'abréviation de Fabrication Laboratory. Il s'agit d'un environnement de développement et de conception de solution dans les domaines des technologies en général. Il a pour objectif de donner aux étudiants et passionés de technologie de mettre en oeuvre leurs projets avec des équipements de pointe et un accompagnement personalisé.</p>
+        <h1 className="text-3xl font-bold text-black font-mono">Vous avez dit {`"fab lab"`} ?</h1>
+        <p>{`"Fab Lab"`} est {`l'abréviation`} de Fabrication Laboratory. Il {`s'agit`} d'un environnement de développement et de conception de solution dans les domaines des technologies en général. Il a pour objectif de donner aux étudiants et passionés de technologie de mettre en oeuvre leurs projets avec des équipements de pointe et un accompagnement personalisé.</p>
         <Button>En savoir plus sur les Fab Lab</Button>
       </Box>
       <Box bg="bg-red-400" >
         <h1 className="text-3xl font-bold text-black font-mono">Akuna Lab</h1>
-        <p>Akuna signifie "réflexion" en langue Akyé. Akuna Lab est la branche de conception de l'initiative Akuna Innov qui se veut être l'intelligence au service de l'innovation.</p>
+        <p>Akuna signifie {`"réflexion"`} en langue Akyé. Akuna Lab est la branche de conception de {`l'initiative`} Akuna Innov qui se veut être {`l'intelligence`} au service de {`l'innovation`}.</p>
         <Button>En apprendre plus sur Akuna</Button>
       </Box>
       <Box>
