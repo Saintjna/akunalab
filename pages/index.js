@@ -23,7 +23,7 @@ export default function Home() {
       </Hero>
       <Box>
         <h1 className="text-3xl font-bold text-black font-mono">Vous avez dit {`"fab lab"`} ?</h1>
-        <p>{`"Fab Lab"`} est {`l'abréviation`} de Fabrication Laboratory. Il {`s'agit`} d'un environnement de développement et de conception de solution dans les domaines des technologies en général. Il a pour objectif de donner aux étudiants et passionés de technologie de mettre en oeuvre leurs projets avec des équipements de pointe et un accompagnement personalisé.</p>
+        <p>{`"Fab Lab"`} est {`l'abréviation`} de Fabrication Laboratory. Il {`s'agit`} {`d'un`} environnement de développement et de conception de solution dans les domaines des technologies en général. Il a pour objectif de donner aux étudiants et passionés de technologie de mettre en oeuvre leurs projets avec des équipements de pointe et un accompagnement personalisé.</p>
         <Button>En savoir plus sur les Fab Lab</Button>
       </Box>
       <Box bg="bg-red-400" >
