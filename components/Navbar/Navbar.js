@@ -59,9 +59,9 @@ const MenuButton = () => {
       className="flex items-end flex-col"
       onClick={() => setMenuClick(!menuClick)}>
       <button className="outline-none mobile-menu-button flex">
-        <span className="text-gray-200">Menu</span>
+        <span>Menu</span>
         <svg
-          className="w-6 h-6 text-gray-200"
+          className="w-6 h-6"
           x-show="!showMenu"
           fill="none"
           strokeLinecap="round"
@@ -81,9 +81,9 @@ const MenuButton = () => {
 const Navbar = () => {
   
   return (
-    <nav className="flex shadow-lg bg-red-500">
+    <nav className="flex shadow-lg bg-red-500 dark:bg-gray-800 text-gray-200 dark:text-white">
       <div className="flex justify-between w-full sm:max-w-4xl mx-auto items-start sm:items-center py-4 px-2">
-        <p className="font-bold text-gray-200">akuna lab</p>
+        <p className="font-bold">akuna lab</p>
         {/* {showMenu<540 ? <MenuButton/> : <NavLinks/>} */}
         <NavLinks/>
       </div>
