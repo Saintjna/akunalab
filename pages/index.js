@@ -26,7 +26,7 @@ export default function Home() {
       </Hero>
       <Box>
         <div className="flex flex-col gap-4 w-full h-96 px-2 py-3">
-          <h1 className="text-4xl sm:text-4xl font-bold font-mono">Vous avez dit "fab lab"?</h1>
+          <h1 className="text-4xl sm:text-4xl font-bold font-mono">Vous avez dit {`"fab lab"`}?</h1>
           <p className="leading-8">
           {`"Fab Lab"`} est {`l'abréviation`} de Fabrication Laboratory. Il {`s'agit`} {`d'un`} environnement de développement et de conception de solution dans les domaines des technologies en général. Il a pour objectif de donner aux étudiants et passionés de technologie de mettre en oeuvre leurs projets avec des équipements de pointe et un accompagnement personnalisé.
           </p>
