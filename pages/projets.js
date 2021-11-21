@@ -9,7 +9,7 @@ export default function Projets() {
         <meta name="description" content="Akuna Lab le fab-lab au service de l'innovation" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Projets</h1>
+      <h1 className="text-4xl font-bold mt-4">Projets</h1>
     </Layout>
   )
 }
