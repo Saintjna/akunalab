@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="description" content="Akuna Lab le fab-lab au service de l'innovation" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero img={scienceImg} img_alt="a light bulb as science">
+      <Hero>
         <h1 className="text-8xl sm:text-9xl font-bold font-mono">Akuna Lab</h1>
         <p className="text-xl text-red-600 font-bold">Le fab-lab au service de {`l'innovation`}.</p>
         <Button link="/akunalab">En savoir plus</Button>
