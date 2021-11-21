@@ -22,24 +22,31 @@ const Footer = () => {
             <a className="hover:underline transition-all ease-in-out duration-500">Evènements</a>
           </Link>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 items-end sm:items-start">
           <div className="flex gap-3">
-              <Image
-                src={linkedinIcon}
-                alt="LinkedIn Icon"
-                height="16"
-                width="16"
-              />
-              {/* <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */}
-              <Image
-                src={instaIcon}
-                alt="LinkedIn Icon"
-                height="16"
-                width="16"
-              />
+              <Link href="#">
+                <a>
+                  <Image
+                    src={linkedinIcon}
+                    alt="LinkedIn Icon"
+                    height="16"
+                    width="16"
+                  />
+                </a>
+              </Link>
+              <Link href="#">
+                <a>
+                  <Image
+                    src={instaIcon}
+                    alt="Instagram Icon"
+                    height="16"
+                    width="16"
+                  />
+                </a>
+              </Link>
           </div>
           <p>akuna lab 2021 - present</p>
-          <p>Institut National Polytechnique Houphouët Boigny de Yamoussoukro</p>
+          <p className="text-right sm:text-left">Institut National Polytechnique Houphouët Boigny de Yamoussoukro</p>
         </div>
       </div>
     </div>
