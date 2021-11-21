@@ -74,7 +74,7 @@ export default function Home() {
         <div className="flex flex-col gap-4 w-full px-2 py-3">
           <h1 className="text-4xl sm:text-4xl font-bold font-mono">Nos équipements</h1>
           <p className="leading-8">
-            Des imprimantes 3d au découpe laser, nous disposons des équipements utilisés aujourd'hui dans le monde de l'innovation.
+            Des imprimantes 3d au découpe laser, nous disposons des équipements utilisés {`aujourd'hui`} dans le monde de {`l'innovation`}.
           </p>
           <Button link="/equipements">Découvrez nos équipements</Button>
         </div>
