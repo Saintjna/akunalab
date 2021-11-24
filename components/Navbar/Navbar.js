@@ -1,6 +1,5 @@
-import { useRef, useState, useEffect } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
-import useWindowDimensions from '../../hooks/UseWindowDimensions'
 
 const NavLinks = () => {
   return (
@@ -9,20 +8,20 @@ const NavLinks = () => {
       <MenuButton/>
     </div>
     <div className="hidden sm:flex space-x-1">
-      <Link href="#">
-        <a className="py-4 px-2 text-gray-200">Le fab-lab</a>
+      <Link href="/akunalab">
+        <a className="py-4 px-2 text-gray-800">Le fab-lab</a>
       </Link>
-      <Link href="#">
-        <a className="py-4 px-2 text-gray-200">Projets</a>
+      <Link href="/projets">
+        <a className="py-4 px-2 text-gray-800">Projets</a>
       </Link>
-      <Link href="#">
-        <a className="py-4 px-2 text-gray-200">Equipements</a>
+      <Link href="/equipements">
+        <a className="py-4 px-2 text-gray-800">Equipements</a>
       </Link>
-      <Link href="#">
-        <a className="py-4 px-2 text-gray-200">Workshops</a>
+      <Link href="/workshops">
+        <a className="py-4 px-2 text-gray-800">Workshops</a>
       </Link>
-      <Link href="#">
-        <a className="py-4 px-2 text-gray-200">Contact</a>
+      <Link href="/contact">
+        <a className="py-4 px-2 text-gray-800">Contact</a>
       </Link>
     </div>
     </>
@@ -32,20 +31,20 @@ const NavLinks = () => {
 const NavLinksMobile = () => {
   return (
     <div className="flex flex-col items-end space-x-1">
-      <Link href="#">
-        <a className="py-2 px-2 text-gray-200">Le fab-lab</a>
+      <Link href="/akunalab">
+        <a className="py-2 px-2 text-gray-800">Le fab-lab</a>
       </Link>
-      <Link href="#">
-        <a className="py-2 px-2 text-gray-200">Projets</a>
+      <Link href="/projets">
+        <a className="py-2 px-2 text-gray-800">Projets</a>
       </Link>
-      <Link href="#">
-        <a className="py-2 px-2 text-gray-200">Equipements</a>
+      <Link href="/equipements">
+        <a className="py-2 px-2 text-gray-800">Equipements</a>
       </Link>
-      <Link href="#">
-        <a className="py-2 px-2 text-gray-200">Workshops</a>
+      <Link href="/workshops">
+        <a className="py-2 px-2 text-gray-800">Workshops</a>
       </Link>
-      <Link href="#">
-        <a className="py-2 px-2 text-gray-200">Contact</a>
+      <Link href="/contact">
+        <a className="py-2 px-2 text-gray-800">Contact</a>
       </Link>
     </div>
   )
@@ -81,10 +80,9 @@ const MenuButton = () => {
 const Navbar = () => {
   
   return (
-    <nav className="flex shadow-lg bg-red-500 dark:bg-gray-800 text-gray-200 dark:text-white">
-      <div className="flex justify-between w-full sm:max-w-4xl mx-auto items-start sm:items-center py-4 px-2">
-        <p className="font-bold">akuna lab</p>
-        {/* {showMenu<540 ? <MenuButton/> : <NavLinks/>} */}
+    <nav className="flex shadow-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white sticky top-0 z-50">
+      <div className="flex justify-between w-full sm:max-w-5xl mx-auto items-start sm:items-center py-4 px-2">
+        <Link href="/"><a className="font-bold">akuna lab</a></Link>
         <NavLinks/>
       </div>
     </nav>
