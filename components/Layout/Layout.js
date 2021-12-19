@@ -15,7 +15,7 @@ const Layout = ({ children, pageTitle }) => {
         <meta property="og:type" content="website"/>
       </Head>
       <Navbar />
-      <div className="flex flex-col justify-between w-full sm:max-w-5xl mx-auto mb-4 min-h-screen">
+      <div className="flex flex-col  w-full sm:max-w-5xl mx-auto mb-4 min-h-screen">
         {children}
       </div>
       <Footer />
