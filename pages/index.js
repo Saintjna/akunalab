@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import Layout from '../components/Layout/Layout'
 import Hero from '../components/Hero/Hero'
@@ -9,12 +8,7 @@ import aboutImg from '../public/about-image.jpg'
 
 export default function Home() {
   return (
-    <Layout>
-      <Head>
-        <title>Akuna Lab</title>
-        <meta name="description" content="Akuna Lab le fab-lab au service de l'innovation" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout pageTitle="Home">
       <Hero>
         <h1 className="text-8xl sm:text-9xl font-bold font-mono">Akuna Lab</h1>
         <p className="text-xl text-red-600 font-bold">Le fab-lab au service de {`l'innovation`}.</p>
