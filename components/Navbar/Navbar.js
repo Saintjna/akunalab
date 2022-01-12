@@ -80,7 +80,7 @@ const MenuButton = () => {
 const Navbar = () => {
   
   return (
-    <nav className="flex shadow-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white sticky top-0 z-50">
+    <nav className="flex shadow-sm bg-white dark:bg-gray-800 text-gray-800 dark:text-white sticky top-0 z-50">
       <div className="flex justify-between w-full sm:max-w-5xl mx-auto items-start sm:items-center py-4 px-2">
         <Link href="/"><a className="font-bold">akuna lab</a></Link>
         <NavLinks/>

@@ -3,7 +3,6 @@ import Layout from '../components/Layout/Layout'
 import Hero from '../components/Hero/Hero'
 import Box from '../components/Box/Box'
 import Button from '../components/Button/Button'
-import scienceImg from '../public/science (2).png'
 import aboutImg from '../public/about-image.jpg'
 
 export default function Home() {
@@ -23,7 +22,7 @@ export default function Home() {
             objectFit="cover"
           />
         </div>
-        <div className="flex flex-col gap-4 w-full px-2 py-3 items-end">
+        <div className="flex flex-col gap-4 w-full p-10 items-end">
           <h1 className="text-4xl sm:text-4xl font-bold font-mono">Nos Projets</h1>
           <p className="leading-8 text-right">
           Nous travaillons sur plusieurs projets avec pour objectif {`d'impacter`} et de transformer notre environnement.
@@ -32,7 +31,7 @@ export default function Home() {
         </div>
       </Box>
       <Box bg="bg-yellow-500" shadow="shadow-lg">
-        <div className="flex flex-col gap-4 w-full px-2 py-3">
+        <div className="flex flex-col gap-4 w-full p-8">
           <h1 className="text-4xl sm:text-4xl font-bold font-mono">Vous avez dit {`"fab lab"`}?</h1>
           <p className="leading-8">
           {`"Fab Lab"`} est {`l'abréviation`} de Fabrication Laboratory. Il {`s'agit`} {`d'un`} environnement de développement et de conception de solution dans les domaines des technologies en général. Il a pour objectif de donner aux étudiants et passionés de technologie de mettre en oeuvre leurs projets avec des équipements de pointe et un accompagnement personnalisé.
@@ -56,7 +55,7 @@ export default function Home() {
             objectFit="cover"
           />
         </div>
-        <div className="flex flex-col gap-4 w-full px-2 py-3 items-end">
+        <div className="flex flex-col gap-4 w-full p-8 items-end">
           <h1 className="text-4xl sm:text-4xl font-bold font-mono">Akuna Lab</h1>
           <p className="leading-8 text-right">
           Akuna signifie {`"réflexion"`} en langue Akyé. Akuna Lab est la branche de conception de {`l'initiative`} Akuna Innov qui se veut être {`l'intelligence`} au service de {`l'innovation`}.
@@ -65,7 +64,7 @@ export default function Home() {
         </div>
       </Box>
       <Box bg="bg-green-500" shadow="shadow-lg">
-        <div className="flex flex-col gap-4 w-full px-2 py-3">
+        <div className="flex flex-col gap-4 w-full p-8">
           <h1 className="text-4xl sm:text-4xl font-bold font-mono">Nos équipements</h1>
           <p className="leading-8">
             Des imprimantes 3d au découpe laser, nous disposons des équipements utilisés {`aujourd'hui`} dans le monde de {`l'innovation`}.
